@@ -34,8 +34,8 @@ executables:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
-    dependencies:
-    - {{name}}
+    dependencies: []
+#    - {{name}}
 
 tests:
   {{name}}-test:
