@@ -1,3 +1,16 @@
+# Stack templates
+
+This is a fork from [commercialhaskell/stack-templates](https://github.com/commercialhaskell/stack-templates).
+
+
+## How to use a template
+
+Here is an example to create an executable project.
+
+```bash
+stack new my-exec-project  https://raw.githubusercontent.com/nwtgck/stack-templates/master/executable.hsfiles
+```
+
 ## Status
 
 There [are plans] to change the way Stack templates are done in the near
