@@ -9,7 +9,7 @@ copyright:           "{{copyright}}{{^copyright}}{{year}}{{^year}}2017{{/year}} 
 
 extra-source-files:
 - README.md
-- ChangeLog.md
+- CHANGELOG.md
 
 # Metadata used when publishing your package
 synopsis:            Short description of your package
@@ -23,8 +23,8 @@ description:         Please see the README on Github at <https://github.com/{{gi
 dependencies:
 - base >= 4.7 && < 5
 
-library:
-  source-dirs: src
+#library:
+#  source-dirs: src
 
 executables:
   {{name}}-exe:
@@ -56,27 +56,21 @@ main = defaultMain
 main :: IO ()
 main = putStrLn "Test suite not yet implemented"
 
-{-# START_FILE src/Lib.hs #-}
-module Lib
-    ( someFunc
-    ) where
-
-someFunc :: IO ()
-someFunc = putStrLn "someFunc"
-
 {-# START_FILE app/Main.hs #-}
 module Main where
 
-import Lib
-
 main :: IO ()
-main = someFunc
+main = do
+  putStrLn "hello, world from stack executable template"
 
 {-# START_FILE README.md #-}
 # {{name}}
 
-{-# START_FILE ChangeLog.md #-}
-# Changelog for {{name}}
+{-# START_FILE CHANGELOG.md #-}
+# Changelog
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 
 ## Unreleased changes
 
@@ -113,6 +107,5 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 {-# START_FILE .gitignore #-}
-.stack-work/
-{{name}}.cabal
-*~
+/.stack-work/
+/{{name}}.cabal
