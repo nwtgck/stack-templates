@@ -45,8 +45,8 @@ tests:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
-    dependencies:
-    - {{name}}
+    dependencies: []
+#    - {{name}}
 
 {-# START_FILE Setup.hs #-}
 import Distribution.Simple
@@ -59,6 +59,7 @@ main = putStrLn "Test suite not yet implemented"
 {-# START_FILE app/Main.hs #-}
 module Main where
 
+-- TODO: Implement
 main :: IO ()
 main = do
   putStrLn "hello, world from stack executable template"
