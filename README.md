@@ -43,7 +43,7 @@ templates:
   params:
     author-email: chrisdone@gmail.com
     author-name: Chris Done
-    copyright: 2017 Chris Done
+    copyright: 2018 Chris Done
     github-username: chrisdone
     category: Development
 ```
