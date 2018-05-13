@@ -3,12 +3,20 @@
 This is a fork from [commercialhaskell/stack-templates](https://github.com/commercialhaskell/stack-templates).
 
 
-## How to use a template
+## `stack new` -  Executable project
 
 Here is an example to create an executable project.
 
 ```bash
-stack new my-exec-project  https://raw.githubusercontent.com/nwtgck/stack-templates/master/executable.hsfiles
+stack new my-exec https://raw.githubusercontent.com/nwtgck/stack-templates/master/executable.hsfiles
+```
+
+## `stack new` -  Library project
+
+Here is an example to create a library project.
+
+```bash
+stack new my-lib https://raw.githubusercontent.com/nwtgck/stack-templates/master/library.hsfiles
 ```
 
 ## Status
